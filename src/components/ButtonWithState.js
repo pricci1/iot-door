@@ -5,7 +5,11 @@ const ButtonWithState = ({ senderCallback, message, text }) => {
     e.preventDefault();
     senderCallback(message);
   };
-  return <button onClick={onclick}>{text}</button>;
+  return (
+    <button className="btn btn-success m-1" onClick={onclick}>
+      {text}
+    </button>
+  );
 };
 
 export default ButtonWithState;

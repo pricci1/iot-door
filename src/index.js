@@ -8,7 +8,7 @@ import { serverAddress, serverPort, subTopic, pubTopic } from "./consts";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App container">
       <Connector mqttProps={{ host: serverAddress, port: serverPort }}>
         <Main pubTopic={pubTopic} subTopic={subTopic} />
       </Connector>
